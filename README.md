@@ -50,3 +50,24 @@ Now the latest version Ruby is installed you can install Jekyll and Bundler (pac
 ``` 
 gem install --user-install bundler jekyll
 ```
+
+## Running Jekyll
+
+On a first try you first have to create a new [site](https://jekyllrb.com/docs/):
+
+```
+jekyll new isaac-blog
+```
+
+First remove the `Gemfile.lock` (if one exists) and install the gems needed by Jekyll. I assume you're in the Jekyll site directory (if not run `cd isaac-blog`)
+
+```
+rm Gemfile.lock
+bundle install
+```
+
+Now you can run Jekyll with the installed gems:
+
+```
+bundle exec jekyll serve
+```
