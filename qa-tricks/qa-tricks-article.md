@@ -8,6 +8,12 @@
  The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes.
 ```
 
+Or a bit more [elaborate](https://gruntjs.com/sample-gruntfile):
+
+```
+While developing the library and releasing new versions there are a few tasks that you need to perform on a regular basis. For example, you might want to ensure that the code you write adheres to best practices, or that the code you've written doesn't result in unexpected behaviors.
+```
+
 To use locally installed Grunt (from `package.json`):
 
 ```
@@ -35,7 +41,9 @@ grunt.initConfig({
 
 `uglify` name is `uglify` property in config.
 
-[Plugins](https://github.com/gruntjs) available.
+[Plugins](https://github.com/gruntjs) are available. For example a [Cypress plugin](https://www.npmjs.com/package/grunt-cypress).
+
+Grunt also has a [templating language](https://gruntjs.com/api/grunt.template).
 
 ### Use Grunt from within DevTools
 
