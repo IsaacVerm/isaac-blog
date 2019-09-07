@@ -1,4 +1,4 @@
-# How to build the simplest web page possible
+# Simplest web page 
 
 ## Guides
 
