@@ -1,4 +1,4 @@
-# Minimal tested app
+# How to build the simplest web page possible
 
 ## Guides
 
@@ -141,11 +141,53 @@ Interesting to note is the browser doesn't just display `<p>I am a paragraph</p>
 
 ### Deployment
 
-Now we have a web page we're ready to share it with the world. Now the `html` file is just a file on our computer and of course nobody else has access to our computer.
+Now we have a web page we're ready to share it with the world. Now the `index.html` file is just a file on our computer and of course nobody else has access to our computer.
 
-If we want to share it we need a server. The server will take care of requests by other browsers. Basically some browser will ask the server to give it the web page and the server will [give it](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works).
+If we want to share it we need a server. The server will take care of requests by other browsers. Basically some browser will ask the server to give it the web page and the server will [give it](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works). We could make our own computer the server but that would mean it has to be on 24 hours a day. It's clearly better to use an external server provider.
 
-A popular choice to host html files like this is [GitHub Pages](https://pages.github.com/). GitHub will gladly act as a server for us but on 1 condition: we need a repository.
+The most popular choice to host static html pages like the one we just created is to use [GitHub Pages](https://pages.github.com/). However, to use GitHub Pages you need both knowledge of the command line and Git.
+
+The command line is a [text interface](https://www.codecademy.com/articles/command-line-commands) for your computer instead of the graphical user interfaces (GUI) most of us are used to in daily life (for example the Spotify app is a graphical user interface). To use it effectively you need to know some basic commands which would be too much for a tutorial like this.
+
+Git is a kind of computer language which helps tracking changes between files. It can be used in a command line or GUI way but in the end the concepts needed to use it effectively would be outside the scope of this tutorial.
+
+There are other options like [surge](https://surge.sh/) which has the benefit you don't need a version control system like Git but you still need to know your way around the command line.
+
+So in the end the best option for us now turned out to be [Neocities](https://neocities.org), the successor of Geocities (fittingly known for its 90s looking sites which is exactly what we're aiming for here).
+
+To use Neocities to host your `index.html` file you need to:
+
+- open a Neocities account
+- go to the [Neocities dashboard](https://neocities.org/dashboard)
+- add the `index.html` file to Home
+- open your site
+
+### What you did
+
+#### Learn HTML elements
+
+You got to know HTML, the most fundamental building block of the web. In essence most of web development is just changing HTML elements in one way or another. Difference with what we just did is instead of manually changing the HTML elements in some files, the HTML elements are changed dynamically (for example with Javascript).
+
+But so even these dynamic sites in the end just deal with HTML elements. There can be lots of layers of complexity built on top of it but in the end the basics are easy to understand. And that's reassuring. Things get only easier from here on.
+
+#### Deployment
+
+You learned how to share the web page you created with others on a server. Manually doing it on Neocities isn't the best way to do it but it got the trick done, the site is there and people can open it!
+
+### What you didn't do
+
+#### Static site
+
+The Holy Trinity consists of HTML, Javascript and CSS. This tutorial didn't touch Javascript or CSS. The use of Javascript determines the difference between a static and dynamic site. The difference between static and dynamic lies in the moment the HTML is created:
+
+- static sites generate all the HTML on the server and then hand it over to the browser
+- dynamic sites change the HTML after they received it from the server
+
+For example say you want a button on your site which remove some text when you click on it. Removing the text is changing the HTML so you need a dynamic site (with Javascript) to make this work
+
+### Surge
+
+No need to create account, just type `surge` in terminal, follow instructions and open link.
 
 ### Git
 
@@ -206,5 +248,9 @@ Actually, most of the times I skip the CSS part. I made a few web apps and all o
 It's hard to explain something as easy as possible. For example Git is very useful and even necessary if you want to use GitHub Pages but you can't explain how to use Git without explaining some basic like the file type changes.
 
 Difficult to avoid Git or command line for deployment.
+
+[Neocities](https://neocities.org/): <3 Geocities
+Surge: uses command line
+GitHub Pages: uses command line + Git
 
 Installation instructions can quickly go way too much in depth if you have no idea of what the reader is using.
