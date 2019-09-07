@@ -32,7 +32,7 @@ Why not enough:
 
 ## Goal
 
-Lots of people have the need to quickly share some of their information in a way they like. Sadly enough, lots of people are not really familiar with a way to do this. 
+Lots of people have the need to quickly share some of their information in a way they like. Sadly enough, lots of people are not really familiar with a way to do this.
 
 Of the people who are not familiar with programming but still have the courage to give it a try lots of people give up because their app falls over.
 
@@ -47,6 +47,7 @@ I want to show:
 Showing it doesn't take a lot to build a functioning app that is decently tested. Since I have a QA background I'll put extra stress on the testing part.
 
 Requirements:
+
 - functioning app
 - thoroughly tested
 
@@ -100,45 +101,91 @@ Doesn't just introduce concepts, goes through the reasoning why they're needed a
 
 [Other tutorials exist](https://meiert.com/en/blog/minimal-web-development/) but they often go already too much into detail (beginners don't care about ES6, ES7 or ES8 but just about making something work)
 
-## First web application
-
-### HTML
-
-The Holy Trinity is HTML, Javascript and CSS but HTML is God. 
-
-```
-
-```
-
-
-
 ## First step
 
-Starting from a blank page is always hard. Let's think about what we need. In web development there's something called the Holy Trinity of HTML, Javascript and CSS. HTML is the site itself, Javascript is used to modify that HTML and CSS makes everything prettier.
+### Holy Trinity
 
-Most of the times I skip the CSS part. I made a few web apps and all of them have that most distinctive 90s look. I prefer to call that a serious look but I was told several times it's "butt ugly". De gustibus et colorbus. So for the sake of simplicity in this tutorial I will forsake the Holy Trinity (in the Middle Ages that would make me end up at the stake, in modern times you just get harassed by UX designers which is a far better fate) and stick to Duality.
+Starting from a blank page is always hard. Let's think about what we want our web page to accomplish.
 
-The MDN documentation is a great resource for anything related to web. 
+```
+create and share content
+```
 
-### Client side
+In web development there's something called the Holy Trinity of HTML, Javascript and CSS.
 
-### Server side
+- HTML structures content
+- Javascript is used to modify that HTML
+- CSS describes how the HTML content should be presented
+
+As you may have noticed above, in the Holy Trinity both Javascript and CSS refer to HTML. So that makes you think: could we create a web page with only HTML? Well, yes!
+
+### HTML-only
+
+From [MDN HTML basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics):
+
+**HTML = elements**. Elements wrapped or enclosed or in whatever constellation but in the end it's just elements. HTML elements are like atoms.
+
+How do we know which elements we can use? There's an organisation called w3c which has standardized what elements can be used. A reference of all these elements can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+
+We open the html candy shop mentioned above but there's so many choices! There are elements related to text (e.g. `<p>` for paragraphs), elements related to multimedia (e.g. `<img` for images), for forms, for buttons, whatever you can think of.
+
+Let's stick to text for now. We create a html document called `html-only-page.html` and within we put a single paragraph element:
+
+```
+<p>I am a paragraph</p>
+```
+
+If we now open the html file with a browser like Chrome, you'll see the browser will display the text we want. The html file contains nothing more than a single element with some text but that's already a web page! 
+
+Interesting to note is the browser doesn't just display `<p>I am a paragraph</p>` but interprets the elements. It doesn't display the paragraph tags because it know `<p></p>` means we want to display just the text.
 
 
+### Deployment
+
+Now we have a web page we're ready to share it with the world. Now the `html` file is just a file on our computer and of course nobody else has access to our computer. 
+
+If we want to share it we need a server. The server will take care of requests by other browsers. Basically some browser will ask the server to give it the web page and the server will [give it](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works).
+
+A popular choice to host html files like this is [GitHub Pages](https://pages.github.com/). GitHub will gladly act as a server for us but on 1 condition: we need a repository.
+
+### Git
+
+So in order to deploy we have to make a small detour to Git. 
+
+We don't have to interact with the Git language directly but can use an application which helps us. The instructions on GitHub should be clear:
+
+- create a GitHub account
+- download GitHub Desktop
+- create a repository
+- clone the repository
+- commit changes
+- push changes to server
+
+Cloning means you copy the code that's on the server to your own computer.
+
+### Summary
+
+HTML = elements.
+
+Browsers interpret elements.
+
+Git helps saving our code on a server.
+
+## App
+
+I was reading `Three Men in a Boat`, thoroughly liking it, and this book by Jerome K. Jerome contains lots of memorable quotes. So let's do humanity a service and make these quotes more readily available.
+
+You can ask up to 3 quotes but not more (too much is too much). If
+
+### Frontend
+
+Actually, most of the times I skip the CSS part. I made a few web apps and all of them have that most distinctive 90s look. I prefer to call that a serious look but I was told several times it's "butt ugly". De gustibus et colorbus. So for the sake of simplicity in this tutorial I will forsake the Holy Trinity (in the Middle Ages that would make me end up at the stake, in modern times you just get harassed by UX designers which is a far better fate) and stick to [Duality](<https://en.wikipedia.org/wiki/Holy_Spirit_(Christian_denominational_variations)>).
+
+### Backend
 
 - server
 - application
 - database
-
-## App
-
-I was reading `Three Men in a Boat`, thoroughly liking it, and this book by Jerome K. Jerome contains lots of memorable quotes. So let's do humanity a service and make these quotes more readily available. 
-
-You can ask up to 3 quotes but not more (too much is too much). If 
-
-### Backend
-
-Single 
 
 ## Testing
 
