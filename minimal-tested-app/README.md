@@ -135,14 +135,13 @@ Let's stick to text for now. We create a html document called `html-only-page.ht
 <p>I am a paragraph</p>
 ```
 
-If we now open the html file with a browser like Chrome, you'll see the browser will display the text we want. The html file contains nothing more than a single element with some text but that's already a web page! 
+If we now open the html file with a browser like Chrome, you'll see the browser will display the text we want. The html file contains nothing more than a single element with some text but that's already a web page!
 
 Interesting to note is the browser doesn't just display `<p>I am a paragraph</p>` but interprets the elements. It doesn't display the paragraph tags because it know `<p></p>` means we want to display just the text.
 
-
 ### Deployment
 
-Now we have a web page we're ready to share it with the world. Now the `html` file is just a file on our computer and of course nobody else has access to our computer. 
+Now we have a web page we're ready to share it with the world. Now the `html` file is just a file on our computer and of course nobody else has access to our computer.
 
 If we want to share it we need a server. The server will take care of requests by other browsers. Basically some browser will ask the server to give it the web page and the server will [give it](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works).
 
@@ -150,16 +149,25 @@ A popular choice to host html files like this is [GitHub Pages](https://pages.gi
 
 ### Git
 
-So in order to deploy we have to make a small detour to Git. 
+So in order to deploy we have to make a small detour to Git.
 
-We don't have to interact with the Git language directly but can use an application which helps us. The instructions on GitHub should be clear:
+To work with Git we can either use an application or the command line. Although using an application seems the easiest way it's actually the hardest way. If you use git it's important to know what is really happening and I find it's hard to see that with an application.
 
+We use Git because it helps tracking changes between files. It also helps us to save our code safely on a server, so not on your own computer.
+
+The most important thing to know about Git is the [different stages a file can be in](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
+
+All we want to do is put our files on a server so we'll need to do the following:
+
+- install Git
 - create a GitHub account
-- download GitHub Desktop
 - create a repository
 - clone the repository
+- add changes to staging
 - commit changes
 - push changes to server
+
+Installing Git [depends on the operating system](https://www.atlassian.com/git/tutorials/install-git) you're using.
 
 Cloning means you copy the code that's on the server to your own computer.
 
@@ -192,3 +200,11 @@ Actually, most of the times I skip the CSS part. I made a few web apps and all o
 - ask for quote
   - you get quote text and author
 - can't ask for more than 3 quotes
+
+## Challenges
+
+It's hard to explain something as easy as possible. For example Git is very useful and even necessary if you want to use GitHub Pages but you can't explain how to use Git without explaining some basic like the file type changes.
+
+Difficult to avoid Git or command line for deployment.
+
+Installation instructions can quickly go way too much in depth if you have no idea of what the reader is using.
