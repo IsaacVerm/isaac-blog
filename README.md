@@ -19,6 +19,7 @@ hugo new site blog
 ```
 hugo new posts/blablabla.md
 ```
+
 Post will be added to `/content/posts` folder.
 
 ## Start server
@@ -28,6 +29,22 @@ If you just use `new posts` the post created will have draft status set to true.
 ```
 hugo server -D
 ```
+
+## Deployment
+
+Deployed on [GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
+
+## Static content
+
+[Static content](https://gohugo.io/content-management/static-files/) like images are put in the `/static` folder.
+
+Important remark, images can be added like this in a post:
+
+```
+![Example image](/neocities_dashboard.png)
+```
+
+Locally you can get away with not using an alt label like `Example image` but you need it in Hugo.
 
 ## Theme
 
