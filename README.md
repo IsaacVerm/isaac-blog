@@ -34,6 +34,14 @@ hugo server -D
 
 Deployed on [GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/).
 
+### Steps
+
+Build:
+
+```
+hugo
+```
+
 ## Static content
 
 [Static content](https://gohugo.io/content-management/static-files/) like images are put in the `/static` folder.
