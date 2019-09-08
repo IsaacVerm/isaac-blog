@@ -1,105 +1,33 @@
 # Simplest web page 
 
-## Guides
+## Rationale
 
-[MDN Getting started with web development](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
+Everyone comes in touch with the web every day. Opening a browser is as natural as waking up. Sadly enough, way less people know how the web really works. That's a pity because once you know how it work possibilities are endless. You can start manipulating the web any way you want which is close to being a magician!
 
-Why not enough:
+In this tutorial I'd like to show:
 
-- does not incorporate modern web practices
-- too in depth
+- web development isn't hard to learn
+- and learning it is fun
+- while learning you are already creating something
+- and creating is fun
+- so you have already double fun
+- and then you can share it
+- sharing is also fun
 
-[https://www.learnenough.com/](https://www.learnenough.com/html)
+So as you can see you're set up for triple whammy of pleasure with this article.
 
-Why not enough:
+To learn about the web I cannot recommend the [MDN documentation](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) enough. However, I can't help but feel the minimal level required to start with that documentation might still be a bit too high for people coming from a total non-technical background. In this tutorial I'll try to bridge that gap by explaining just enough to be able to do what you want but not more.
 
-- by topic (HTML separate from CSS separate from HTML, ...)
-- paying
+So it's not because a concept isn't mentioned in this tutorial it doesn't exist. It's just not mentioned because it would be confusing to introduce it too early. Take this both as a challenge and a reassurance: it's easy to learn enough to do something but there's a whole world of things more to learn!
 
-Bootcamps:
+## What we'd like to make
 
-- [freeCodeCamp](https://learn.freecodecamp.org/)
+As as example I'd like to have:
 
-Why not enough:
+- a functioning web page
+- available on the internet for everyone to access
 
-- small examples which do not cover the whole
-
-## Philosophy
-
-- just enough to be dangerous
-- comprehensive
-- driven by questions
-
-## Goal
-
-Lots of people have the need to quickly share some of their information in a way they like. Sadly enough, lots of people are not really familiar with a way to do this.
-
-Of the people who are not familiar with programming but still have the courage to give it a try lots of people give up because their app falls over.
-
-I want to show:
-
-- things aren't hard to learn
-- you have to do things structured or they fall over
-- it doesn't take a lot of time to make something decent
-- making something is fun
-- sharing what you make is fun
-
-Showing it doesn't take a lot to build a functioning app that is decently tested. Since I have a QA background I'll put extra stress on the testing part.
-
-Requirements:
-
-- functioning app
-- thoroughly tested
-
-Functioning app:
-
-- UI
-- API
-
-Decently tested
-
-- E2E tests
-- UI tests
-- API tests
-- continuous integration
-
-What this tutorial doesn't teach:
-
-- UX goes through the window
-- security goes through the window
-
-There's freedom in DIY.
-
-Tutorial will follow [MDN documentation](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) as a guideline but will be different in some respects:
-
-- in this tutorial I don't dwell too much on the inner workings of concepts. Just enough to be dangerous
-- broder scope: complete overview of modern web development practices
-
-So in a way this tutorial does less (goes less in depth) and in a way it does more (covers more concepts).
-
-It's not because I don't mention something it doesn't exist. I just don't mention it as not to confuse. However, nothing in this tutorial is not true, it can just be very incomplete.
-
-## Value of this contribution
-
-Existing tutorials:
-
-- [MDN: Getting started with the Web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web)
-
-I was inspired by these :
-
-- for myself to freshen up concepts
-- accessible introduction with questions
-- start from absolute basics and improve
-- integrated with modern best practices
-  - testing
-  - version control
-  - automation system
-
-E.g. MDN documentation doesn't mention testing.
-
-Doesn't just introduce concepts, goes through the reasoning why they're needed and how things are related. Based on my own experiences.
-
-[Other tutorials exist](https://meiert.com/en/blog/minimal-web-development/) but they often go already too much into detail (beginners don't care about ES6, ES7 or ES8 but just about making something work)
+As will be shown, both can be achieved by just a single file containing just a single line of text.
 
 ## First step
 
@@ -162,9 +90,9 @@ To use Neocities to host your `index.html` file you need to:
 - add the `index.html` file to Home
 - open your site
 
-### What you did
+## What you did
 
-#### Learn HTML elements
+### Learn HTML elements
 
 You got to know HTML, the most fundamental building block of the web. In essence most of web development is just changing HTML elements in one way or another. Difference with what we just did is instead of manually changing the HTML elements in some files, the HTML elements are changed dynamically (for example with Javascript).
 
@@ -174,9 +102,15 @@ But so even these dynamic sites in the end just deal with HTML elements. There c
 
 You learned how to share the web page you created with others on a server. Manually doing it on Neocities isn't the best way to do it but it got the trick done, the site is there and people can open it!
 
-### What you didn't do
+## What you didn't do
 
-#### Static site
+### Modern web practices
+
+  - testing
+  - version control
+  - automation system
+
+### Static site
 
 The Holy Trinity consists of HTML, Javascript and CSS. This tutorial didn't touch Javascript or CSS. The use of Javascript determines the difference between a static and dynamic site. The difference between static and dynamic lies in the moment the HTML is created:
 
@@ -213,35 +147,13 @@ Installing Git [depends on the operating system](https://www.atlassian.com/git/t
 
 Cloning means you copy the code that's on the server to your own computer.
 
-### Summary
+## Summary
 
 HTML = elements.
 
 Browsers interpret elements.
 
 Git helps saving our code on a server.
-
-## App
-
-I was reading `Three Men in a Boat`, thoroughly liking it, and this book by Jerome K. Jerome contains lots of memorable quotes. So let's do humanity a service and make these quotes more readily available.
-
-You can ask up to 3 quotes but not more (too much is too much). If
-
-### Frontend
-
-Actually, most of the times I skip the CSS part. I made a few web apps and all of them have that most distinctive 90s look. I prefer to call that a serious look but I was told several times it's "butt ugly". De gustibus et colorbus. So for the sake of simplicity in this tutorial I will forsake the Holy Trinity (in the Middle Ages that would make me end up at the stake, in modern times you just get harassed by UX designers which is a far better fate) and stick to [Duality](<https://en.wikipedia.org/wiki/Holy_Spirit_(Christian_denominational_variations)>).
-
-### Backend
-
-- server
-- application
-- database
-
-## Testing
-
-- ask for quote
-  - you get quote text and author
-- can't ask for more than 3 quotes
 
 ## Challenges
 
