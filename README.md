@@ -9,3 +9,11 @@ brew install hugo
 ```
 
 ## Create blog
+
+```
+hugo new site blog
+```
+
+## Theme
+
+Uses default Ananke theme.
