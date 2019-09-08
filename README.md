@@ -36,11 +36,28 @@ Deployed on [GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-g
 
 ### Steps
 
+First make sure the repository containing the blog has been [set up](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) as the one you use for GitHub Pages.
+
 Build:
 
 ```
 hugo
 ```
+
+Add commit with build in `/public` included:
+
+```
+git add -A
+git commit -m "name changes"
+```
+
+Push commit to master branch:
+
+```
+git push
+```
+
+Tip: if you have previously deployed with another static site generator (I used Jekyll before) you have to [unpublish](https://help.github.com/en/articles/unpublishing-a-project-pages-site) the previous one first. Unpublishing was kind of brutal by just removing the repo from GitHub.
 
 ## Static content
 
